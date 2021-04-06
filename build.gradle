@@ -25,7 +25,9 @@ allure {
 dependencies {
     testImplementation(
             "org.aspectj:aspectjweaver:1.9.6",
-            "io.appium:java-client:7.0.0",
+            "com.codeborne:selenide:$selenideVersion",
+            "io.qameta.allure:allure-selenide:$allureVersion",
+            "io.appium:java-client:7.3.0",
             "org.junit.jupiter:junit-jupiter-api:$junitVersion")
     testRuntimeOnly "org.junit.jupiter:junit-jupiter-engine:$junitVersion"
 }
